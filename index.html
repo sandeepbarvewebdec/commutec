@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commutec.com</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+
+.container-fluid .navbar-brand{
+    color: rgb(143, 12, 12);
+    padding-top: .6rem;
+    padding-left: 2.5rem;
+}
+.container-fluid .navbar-brand span{
+    color: brown;
+}
+.offcanvas-header .offcanvas-title{
+    color: rgb(143, 12, 12);
+}
+.offcanvas-header .offcanvas-title span{
+    color: brown;
+}
+.btn_brown{
+    background-color: brown;
+    outline: none;
+    border: none;
+}
+.btn_brown:hover{
+    background-color: rgb(143, 12, 12); 
+}
+.offcanvas_cursor{
+    cursor: pointer;
+}
+.display-4{
+    padding-top: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.container h2{
+    padding-top: 3rem;
+    text-align: center;
+}
+.container hr{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+}
+.para p{
+text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  background-color: brown;
+}
+
+.tab-btn.active {
+  background-color: grey;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.wrapper .AboutUs img{
+    width: 30rem;
+}
+.wrapper .content h3,p{
+    padding-left: 6rem;
+}
+.wrapper2{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.2rem;
+}
+.missionimg img{
+  width: 25rem;
+  padding-right:5rem;
+}
+.missioncontent{
+  padding-left: 2.5rem;
+}
+.blog {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: block;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: brown;
+}
+.contact-us {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.media {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.media-item {
+  margin-bottom: 30px;
+}
+
+iframe, img {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* Style for video containers (optional) */
+.media-item iframe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input, textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: brown;
+}
+
+#response {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.vision-mission {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.vision, .mission {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h3 {
+  margin-top: 0;
+}
+.blog {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: block;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: brown;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tablink {
+  background-color:brown;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color:grey;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.project-card {
+  /* Your project card styles */
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tablink {
+  background-color:brown;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color:black;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.team-member {
+  /* Your team member card styles */
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #ccc;
+}
+.slider{
+  width: 60%;
+  height: 500px;
+  box-shadow: 0px 0px 3px grey;
+ 
+  margin: auto;
+}
+
+.sliderimg{
+
+}
+.row .sliderimg img{
+width: 350px;
+}
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  /* Add desired height here */
+  height: 300px;
+  /* Change the background color if desired */
+  background-color: #f2f2f2;
+}
+.carousel {
+  display: flex;
+  /* Set flex-direction to horizontal for a horizontal carousel or vertical for a vertical carousel */
+  flex-direction: row;
+  /* Ensure the images stay in one row */
+  white-space: nowrap;
+  /* Optional: Add some space between the images */
+  gap: 10px;
+  /* Animation to slide images */
+   /*animation: slide 10s infinite linear; */
+}
+
+/* Animation keyframes */
+/*@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional: Style the images */
+.carousel img {
+  /* Adjust image width and height as needed */
+  width: 20%;
+  height: 20%;
+  
+  /* Ensure the images don't exceed the container size */
+  object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Commu<span>tec.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title offcanvas_cursor" id="offcanvasDarkNavbarLabel">Commu<span>tec.</span></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Associated</a></li>
+                      <li><a class="dropdown-item" href="#">Companies</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">  Chairman Vision/Mission</a>
+                  </li>
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Team
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Management</a></li>
+                    <li><a class="dropdown-item" href="#">Creative</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Partner</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Project
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                      <li><a class="dropdown-item" href="#">On Floor</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Partner</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Media</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                  </li>
+              </ul>
+              
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success btn_brown" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="https://images.jdmagicbox.com/comp/chandigarh/s6/0172px172.x172.210904183536.i3s6/catalogue/roy-records-official-mohali-sector-126-kharar-audio-recording-studios-b2x8yekx52.jpg?clr=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+      
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://wallpaperaccess.com/full/2496937.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+       
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://i.pinimg.com/originals/a2/d8/9b/a2d89b576cf10f8aa290b6bef28d89ba.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://wallpaperaccess.com/full/2496937.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://i.pinimg.com/originals/a2/d8/9b/a2d89b576cf10f8aa290b6bef28d89ba.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://wallpaperaccess.com/full/2496937.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://i.pinimg.com/originals/a2/d8/9b/a2d89b576cf10f8aa290b6bef28d89ba.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://wallpaperaccess.com/full/2496937.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://i.pinimg.com/originals/a2/d8/9b/a2d89b576cf10f8aa290b6bef28d89ba.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+      <section class="about-us">
+        <h2>About Us</h2>
+    
+        <div class="tab-container">
+          <button class="tab-btn active" onclick="showTab('overview')">Associated</button>
+          <button class="tab-btn" onclick="showTab('team')">Companies</button>
+         
+        </div>
+    
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+          <h3>Associated</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+        </div>
+    
+        <!-- Team Tab -->
+        <div id="team" class="tab-content">
+          <h3>Compaines</h3>
+          <ul>
+            <li>John Doe - Director</li>
+            <li>Jane Smith - Producer</li>
+            <li>Mike Johnson - Cinematographer</li>
+            <!-- Add more team members as needed -->
+          </ul>
+        </div>
+    
+        <!-- History Tab -->
+      
+    
+      </section>
+
+ 
+      <section class="vision-mission">
+        <h2>Chairman's Vision/Mission</h2>
+    
+        <div class="vision">
+          <h3>Vision</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+        </div>
+    
+        <div class="mission">
+          <h3>Mission</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+        </div>
+    
+      </section>
+      <main>
+        <section id="team-section">
+          <h2>Our Team</h2>
+    
+          <div class="tabs">
+            <button class="tablink" onclick="openTab('tab1')">Management</button>
+            <button class="tablink" onclick="openTab('tab2')">Creative</button>
+            <button class="tablink" onclick="openTab('tab3')">Partner</button>
+          </div>
+    
+          <div id="tab1" class="tabcontent">
+            <div class="team-member">
+              <img src="team_member1.jpg" alt="Management">
+              <h3>Management</h3>
+              <p>Role: Producer</p>
+              <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+    
+          <div id="tab2" class="tabcontent">
+            <div class="team-member">
+              <img src="" alt="Creative">
+              <h3>Creative</h3>
+              <p>Role: Director</p>
+              <p>Bio: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+    
+          <div id="tab3" class="tabcontent">
+            <div class="team-member">
+              <img src="team_member3.jpg" alt="Partner">
+              <h3>Partner</h3>
+              <p>Role: Cinematographer</p>
+              <p>Bio: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="blog">
+        <h2>Seeta Films Blog</h2>
+    
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+          <h3>First Blog Post Title</h3>
+          <p class="date">Date: July 27, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+    
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+          <h3>Second Blog Post Title</h3>
+          <p class="date">Date: July 28, 2023</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+    
+        <!-- Add more blog posts as needed -->
+    
+      </section>
+      <section class="vision-mission">
+        <h2>Our Project</h2>
+    
+        <div class="vision">
+          <h3>Upcoming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+        </div>
+    
+        <div class="mission">
+          <h3>On Floor</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+        </div>
+        <div class="mission">
+          <h3>Partner</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur est. Vestibulum vehicula velit at orci volutpat, non blandit libero accumsan.</p>
+        </div>
+    
+      </section>
+
+     
+  
+
+    
+    
+        <section class="media">
+          <h2>Seeta Films Media</h2>
+      
+          <!-- Image Gallery -->
+          <div class="image-gallery">
+            <div class="image-item">
+              <img src="https://i.pinimg.com/736x/25/aa/6e/25aa6e1b2625fa9a6cb677e0eaad505c.jpg" alt="Image 1">
+            </div>
+            <div class="image-item">
+              <img src="https://s-media-cache-ak0.pinimg.com/736x/2e/59/b6/2e59b60d738280eba63997206e346573.jpg" alt="Image 2">
+            </div>
+            <!-- Add more image items as needed -->
+          </div>
+      
+          <!-- Video Gallery -->
+          <div class="video-gallery">
+            <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Add more video items as needed -->
+          </div>
+        </section>
+        <section class="contact-us">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+      
+            <button type="submit">Send Message</button>
+          </form>
+          <div id="response"></div>
+        </section>
+        <footer>
+          <div class="footer-content">
+            <div class="footer-section contact">
+              <h3>Contact Us</h3>
+              <p>Email: contact@example.com</p>
+              <p>Phone: +91(6477) 456-789</p>
+              <p>Address: Mumbai, India</p>
+            </div>
+            <div class="footer-section social">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+            <div class="footer-section links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Chairman Vision/Mission</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 Commutec.com. All rights reserved.</p>
+          </div>
+        </footer>
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+  
+
+
+
+      </script>
+     <script src="script.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});</script>
+    </body>
+</html>
